@@ -1,0 +1,78 @@
+<div id="contactMain" class="mainContainer">
+  <div data-aos="fade-right" class="headerContainer"
+  >
+    <img class="vectorLineHeader" src="./assets/img/contact/linie_purple_long.png" />
+    <h2 class="header">{{'contact.contactHeader' | translate }}</h2>
+  </div>
+
+  <div class="contactDFlex">
+    <div data-aos="fade-right" class="contactInsideContainer" 
+    >
+      <h4 class="contactInsideHeaderTxt">{{'contact.contactInsideHeaderSpan' | translate }}</h4>
+      <span class="contactInsideSpanTxt1">
+        {{'contact.contactInsideSpan1' | translate }}</span>
+      <br/>
+      <span class="contactInsideSpanTxt2">
+        {{'contact.contactInsideSpan2' | translate }}
+        <span class="contactMe">{{'contact.contactMeSpan' | translate }}</span>
+    </span>
+    </div>
+
+    <div data-aos="fade-left" class="contactFormularContainer">
+      <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+        <input #name="ngModel" minlength="4" [(ngModel)]="contactData.name" name="name"  class="inputName" type="name" placeholder="{{'contact.yourNamePlaceholder' | translate }}" required/>
+        <div class="inputNameRequiredContainer">
+          @if (!name.valid && name.touched) {
+            <span style="color: red;">{{'contact.requiredNameSpan' | translate }}</span>
+          }
+        </div>
+
+        <input #email="ngModel" minlength="4" [(ngModel)]="contactData.email" name="email" class="inputEmail" type="email" placeholder="{{'contact.yourEmailPlaceholder' | translate }}" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"/>
+        <div class="inputEmailRequiredContainer">
+          @if (!email.valid && email.touched) {
+            <span style="color: red;">{{'contact.requiredEmailSpan' | translate }}</span>
+          }
+        </div>
+
+        <input #message="ngModel" minlength="4" [(ngModel)]="contactData.message" name="message" class="inputMessage" type="message" placeholder="{{'contact.yourMessagePlaceholder' | translate }}" required/>
+        <div class="inputMessageRequiredContainer">
+          @if (!message.valid && message.touched) {
+            <span style="color: red;">{{'contact.requiredMessageSpan' | translate }}</span>
+          }
+        </div>
+       
+        <div class="privacyPolicySecondContainer">
+          <div class="privacyPolicy">
+            <input (click)="checked()" name="checkbox" #checkbox="ngModel" [(ngModel)]="contactData.checkbox" class="checkbox" type="checkbox" required/>
+            <span class="contactSpan1">{{'contact.privacyPolicyFirstSpan' | translate }}</span>
+            <a href="privacypolicy" class="textButtonPrivacyPolicy">{{'contact.privacyPolicySpan' | translate }}</a>
+            <span class="contactSpan2">{{'contact.privacyPolicySecondSpan' | translate }}</span>
+            <span class="contactSpan2">{{'contact.privacyPolicyThirdSpan' | translate }}</span>
+          </div>
+          <div class="checkboxRequiredSpanContainer" #privacySpan style="display: none;" *ngIf="!contactData.checkbox">
+            <span style="color: red;">{{'contact.privacyPolicyRequiredSpan' | translate }}</span>
+          </div>
+        </div>
+       
+        @if (!message.valid || !email.valid || !name.valid || !contactData.checkbox) {
+          <input (click)="checkPrivacy()" type="submit" [value]="'contact.buttonSpan' | translate" class="sendButtonDisable">
+        }
+        @else if (message.valid && email.valid && name.valid && contactData.checkbox){
+          <input type="submit" value="Send message :)" class="sendButtonActive">
+        }
+      </form>
+      
+      <div class="inputMessageAndPolicyContainer">
+        <div class="privacyPolicyMainContainer">
+          <div class="goUpButtonContainer">
+            <img (click)="scrollToHomepage()" class="goUpButton"src="./assets/img/contact/go_up_button.png"/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div #sendPopUpID style="display: none;" class="sendPostPopUpContainer">
+    <h1 class="sendPostTxt">{{'contact.sendPostSpan' | translate }}</h1>
+    <button (click)="closePopUp()" class="OKButton">OK</button>
+  </div>
+</div>

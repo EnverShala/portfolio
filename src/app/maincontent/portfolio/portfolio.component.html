@@ -1,0 +1,102 @@
+<div class="mainContainer">
+  <div class="headerMainContainer" data-aos="fade-left">
+    <div class="purpleFirstLine">
+      <img src="./assets/img/portfolioImg/purple_first_line.png" />
+    </div>
+    <div class="headerTxtContainer">
+      <h2 class="portfolioTxt">Portfolio</h2>
+    </div>
+    <div class="purpleSecondLineContainer">
+      <img
+        class="purpleSecondLine"
+        src="./assets/img/portfolioImg/purple_second_line.png"
+      />
+    </div>
+  </div>
+  <div class="sideTextContainer" data-aos="fade-in">
+    <span class="sideText">
+      {{'portfolio.sidetextSpan' | translate }}
+    </span>
+  </div>
+
+  <div class="projectContainer">
+    @if (changeLangGlob.currentLanguage === 'en') {
+      @for (item of projectsEn; track $index) {
+        <div class="projectDisplayFlex{{ $index }}">
+          <div class="projectLeftContainer"
+            data-aos="fade-right"
+            data-aos-offset="0"
+            data-aos-easing="ease-in-sine">
+            <img class="laptopImages{{ $index }}" src="{{ item.images }}" />
+          </div>
+          <div class="projectRightContainer" data-aos="fade-left">
+            <div class="projectNameContainer">
+              <span class="projectName">{{ item.name }}</span>
+            </div>
+            <div class="projectLanguageContainer">
+              <span class="projectLanguage">{{ item.language }}</span>
+            </div>
+            <div class="projectDescriptionContainer">
+              <span class="projectDescription{{ $index }}">{{
+                item.description
+              }}</span>
+            </div>
+            <div class="projectButtons{{ $index }}">
+              <a
+                href="{{ projectsEn[$index].linkLiveTest }}"
+                target="_blank"
+                class="liveTestButton"
+                >{{'portfolio.leftButtonSpan' | translate }}</a
+              >
+              <a
+                href="{{ projectsEn[$index].linkGitHub }}"
+                target="_blank"
+                class="gitHubButton"
+                >Github</a
+              >
+            </div>
+          </div>
+        </div>
+        }
+    } @else {
+        @for (item of projectsDe; track $index) {
+        <div class="projectDisplayFlex{{ $index }}">
+          <div class="projectLeftContainer"
+            data-aos="fade-right"
+            data-aos-offset="0"
+            data-aos-easing="ease-in-sine"
+          >
+            <img class="laptopImages{{ $index }}" src="{{ item.images }}" />
+          </div>
+          <div class="projectRightContainer" data-aos="fade-left">
+            <div class="projectNameContainer">
+              <span class="projectName">{{ item.name }}</span>
+            </div>
+            <div class="projectLanguageContainer">
+              <span class="projectLanguage">{{ item.language }}</span>
+            </div>
+            <div class="projectDescriptionContainer">
+              <span class="projectDescription{{ $index }}">{{
+                item.description
+              }}</span>
+            </div>
+            <div class="projectButtons{{ $index }}">
+              <a
+                href="{{ projectsEn[$index].linkLiveTest }}"
+                target="_blank"
+                class="liveTestButton"
+                >{{'portfolio.leftButtonSpan' | translate }}</a
+              >
+              <a
+                href="{{ projectsEn[$index].linkGitHub }}"
+                target="_blank"
+                class="gitHubButton"
+                >Github</a
+              >
+            </div>
+          </div>
+        </div>
+          }
+    }
+  </div>
+</div>

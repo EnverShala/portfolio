@@ -1,0 +1,70 @@
+{
+    "header": {
+        "aboutmeSpan": "About me",
+        "skillsSpan": "Skills",
+        "portfolioSpan": "Portfolio"
+    },
+    "homepage": {
+        "IamSpan": "I am",
+        "h2JobDescription": "FRONTEND DEVELOPER",
+        "LetsTalkSpan": "Let´s talk!",
+        "scrollDownSpan": "Scroll down"
+    },
+    "aboutme": {
+        "aboutMeH2": "About me",
+        "prefaceSpan": "Hi, I’m a german speaking Frontend Developer based in Stuttgart. Motivated by the limitless opportunities within IT, I am excited about crafting visually captivating and intuitive websites and applications.",
+        "locationSpan": "Flexible in terms of working environments, I can work effectively both on-site in Stuttgart and remotely.",
+        "bulbSpan": "I am open-minded and always looking for personal challenges to constantly improve my knowledge and skills.",
+        "puzzleSpan": "In my profession, programming isn't just about writing code; it's a creative form of problem-solving. I take pride in my ability to distill complex technical challenges into simple, user-friendly solutions. This way, I help you achieve your goals and bring your visions to life."
+    },
+    "myskills": {
+        "mySkillsHeader": "My skills",
+        "mySkillsSpan": "I have gained experience in building projects with different frontend technologies and concepts.",
+        "mySkillsMainSpan": "Looking for",
+        "mySkillsAnotherSpan": "another skill",
+        "mySkillsSecondSpan": "Feel free to contact me. I look forward to expanding on my previous knowledge.",
+        "getInTouchSpan": "Get in touch"
+    },
+    "portfolio": {
+        "sidetextSpan": "Explore a selection of my work here - Interact with projects to see my skills in action.",
+        "joinDescriptionSpan": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
+        "elPolloLocoDescriptionSpan": "Jump Run game based on object oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen",
+        "PokedexDescriptionSpan": "Based on the PokéAPI a simple library that provides and catalogues pokemon information",
+        "leftButtonSpan": "Live test"
+    },
+    "contact": {
+        "contactHeader": "Contact",
+        "contactInsideHeaderSpan": "Got a problem to solve?",
+        "contactInsideSpan1": "Contact me through this form, I am interested in hearing from you, knowing your ideas and contributing to your projects with my work.",
+        "contactInsideSpan2": "Need a Frontend developer?",
+        "contactMeSpan": "Contact me!",
+        "yourNamePlaceholder": "Your name",
+        "yourEmailPlaceholder": "Your email",
+        "yourMessagePlaceholder": "Your message",
+        "requiredNameSpan": "Please enter your name",
+        "requiredEmailSpan": "Please enter your email adress",
+        "requiredMessageSpan": "Please enter a message",
+        "privacyPolicyFirstSpan": "I've read the ",
+        "privacyPolicySpan": "privacy policy ",
+        "privacyPolicySecondSpan": "and agree to the processing ",
+        "privacyPolicyThirdSpan": "of my data as outlined.",
+        "privacyPolicyRequiredSpan": "Please accept the privacy policy",
+        "buttonSpan": "Send message :)",
+        "sendPostSpan": "Send post complete"
+    },
+    "legalNotice": {
+        "ImprintTxt": "Imprint",
+        "DDGTxt": "Information according to § 5 DDG",
+        "representedTxt": "Represented by:",
+        "contactTxt": "Contact",
+        "pPhoneTxt": "Phone",
+        "pDisclaimer": "Disclaimer",
+        "pPrivacy": "Privacy Policy",
+        "pStatement1": "The use of our website is generally possible without providing personal data. If personal data (such as name, address, or email addresses) is collected on our pages, this is always done on a voluntary basis whenever possible. These data will not be passed on to third parties without your explicit consent.",
+        "pStatement2": "We would like to point out that data transmission on the Internet (e.g., when communicating via email) can have security vulnerabilities. A complete protection of data from access by third parties is not possible.",
+        "pStatement3": "The use of contact data published within the scope of the legal imprint obligation by third parties for sending unsolicited advertising and information materials is hereby expressly prohibited. The operators of the pages expressly reserve the right to take legal action in the event of the unsolicited sending of advertising information, such as spam emails.",
+        "pImprintTxt": "Imprint from",
+        "pTheWord": "the",
+        "pLawTxt": "Hasselbach Law Firm, Specialist Lawyers for Family Law"
+    }
+}

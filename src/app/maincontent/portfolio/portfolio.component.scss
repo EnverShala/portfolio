@@ -1,0 +1,336 @@
+.mainContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 200px;
+  max-width: 1920px;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+.headerMainContainer {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 32px;
+  margin-bottom: 50px;
+  .purpleFirstLine {
+    width: 100px;
+    border: 4px 0px 0px 0px;
+  }
+  .headerTxtContainer {
+    display: grid;
+    height: 108px;
+    gap: 10px;
+    .portfolioTxt {
+      margin: 0;
+      font-size: 90px;
+      font-weight: 700;
+      line-height: 108px;
+      text-align: center;
+      color: #fff;
+    }
+  }
+}
+
+.sideTextContainer {
+  margin-top: 200px;
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  .sideText {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    text-align: center;
+  }
+}
+
+.projectContainer {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 150px;
+}
+.projectDisplayFlex0,
+.projectDisplayFlex1,
+.projectDisplayFlex2 {
+  width: 1168px;
+  gap: 170px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &.projectDisplayFlex1 {
+    text-align: right;
+    flex-direction: row-reverse;
+  }
+}
+
+.projectNameContainer {
+  margin-bottom: 28px;
+  .projectName {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38.4px;
+    text-align: left;
+    color: #9747ff;
+  }
+}
+
+.laptopImages0,
+.laptopImages1,
+.laptopImages2 {
+  &:hover {
+    scale: 1.2;
+  }
+}
+
+.projectLanguageContainer {
+  margin-bottom: 12px;
+  .projectLanguage {
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 27.6px;
+    text-align: left;
+    color: #70e61c;
+  }
+}
+
+.projectDescriptionContainer {
+  margin-bottom: 32px;
+  .projectDescription {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    text-align: left;
+    color: #fff;
+  }
+}
+
+.projectButtons0,
+.projectButtons2 {
+  display: flex;
+  justify-content: flex-start;
+  gap: 90px;
+}
+
+.projectButtons1 {
+  display: flex;
+  justify-content: flex-end;
+  gap: 90px;
+}
+
+.liveTestButton {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 152px;
+  height: 58px;
+  gap: 10px;
+  border-radius: 10px;
+  background-color: #9747ff;
+  color: white;
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 27.6px;
+  border: 0;
+  text-align: left;
+  &:hover {
+    cursor: pointer;
+    background: #70e61c;
+  }
+}
+
+.gitHubButton {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 137px;
+  height: 58px;
+  gap: 10px;
+  border-radius: 10px;
+  border: 1px solid;
+  border-color: #70e61c;
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 27.6px;
+  text-align: left;
+  background-color: transparent;
+  color: #fff;
+  &:hover {
+    cursor: pointer;
+    background: #70e61c;
+  }
+}
+
+@media (min-width: 1921px) and (max-width: 3840px) {
+  .mainContainer {
+    margin-top: 300px;
+  }
+}
+@media (max-width: 1540px) {
+  .headerMainContainer {
+    .purpleSecondLine {
+      width: 250px;
+      height: 4px;
+    }
+  }
+}
+@media (max-width: 1460px) {
+  .projectContainer {
+    gap: 100px;
+  }
+  .headerMainContainer {
+    .headerTxtContainer {
+      .portfolioTxt {
+        font-size: 70px;
+      }
+    }
+  }
+  .sideTextContainer {
+    margin-top: 160px;
+    margin-bottom: 60px;
+    .sideText {
+      font-size: 14px;
+    }
+  }
+  .projectLanguageContainer {
+    text-wrap: wrap;
+    width: 400px;
+  }
+  .projectDisplayFlex0,
+  .projectDisplayFlex1,
+  .projectDisplayFlex2 {
+    &.projectDisplayFlex0,
+    &.projectDisplayFlex1,
+    &.projectDisplayFlex2 {
+      gap: 60px;
+      width: 100%;
+    }
+  }
+  .laptopImages0,
+  .laptopImages1,
+  .laptopImages2 {
+    height: 200px;
+  }
+  .projectDescription0,
+  .projectDescription2 {
+    display: block;
+    font-size: 14px;
+    width: 400px;
+    text-wrap: wrap;
+    text-align: start;
+  }
+  .projectDescription1 {
+    display: block;
+    font-size: 14px;
+    width: 400px;
+    text-wrap: wrap;
+    text-align: end;
+  }
+  .projectNameContainer {
+    margin-bottom: 10px;
+    .projectName {
+      font-size: 26px;
+    }
+  }
+  .projectRightContainer,
+  .projectNameContainer,
+  .projectLanguageContainer,
+  .projectLanguage,
+  .projectDescriptionContainer,
+  .projectDescription0,
+  .projectDescription1,
+  .projectDescription2 {
+    font-size: 12px;
+    width: 300px;
+    .projectLanguage {
+      font-size: 16px;
+    }
+  }
+  .liveTestButton,
+  .gitHubButton {
+    width: 110px;
+    height: 40px;
+    font-size: 18px;
+  }
+}
+@media (max-width: 1000px) {
+  .projectContainer {
+    gap: 120px;
+  }
+  .headerMainContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .purpleFirstLine,
+    .purpleSecondLine {
+      display: none;
+    }
+    .headerTxtContainer {
+      .portfolioTxt {
+        margin-left: 40px;
+      }
+    }
+  }
+  .sideTextContainer {
+    margin-bottom: 100px;
+  }
+  .projectNameContainer,
+  .projectLanguageContainer,
+  .projectDescriptionContainer,
+  .projectDescription0,
+  .projectDescription1,
+  .projectDescription2 {
+    width: 100%;
+    text-align: center;
+  }
+  .projectButtons0,
+  .projectButtons1,
+  .projectButtons2 {
+    gap: 50px;
+  }
+  .projectDisplayFlex0,
+  .projectDisplayFlex1,
+  .projectDisplayFlex2 {
+    &.projectDisplayFlex0,
+    &.projectDisplayFlex1,
+    &.projectDisplayFlex2 {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      width: 100%;
+      gap: 20px;
+    }
+  }
+  .projectButtons0,
+  .projectButtons1,
+  .projectButtons2 {
+    justify-content: center;
+  }
+}
+@media (max-width: 660px) {
+  .projectContainer {
+    margin-top: 280px;
+    margin-bottom: 150px;
+  }
+  .sideTextContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    .sideText {
+      width: 300px;
+    }
+  }
+}
+

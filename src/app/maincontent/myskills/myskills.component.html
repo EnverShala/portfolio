@@ -1,0 +1,35 @@
+<img class="greenShadowBg1" src="./assets/img/skillIcons/green_shadow_bg1.png"/>
+<div class="mainContainer">
+  <div class="skillsTxtContainer" data-aos="flip-right">
+    <div class="mySkillsHeaderContainer">
+      <h2 class="mySkillsHeader">{{"myskills.mySkillsHeader" | translate }}</h2>
+      <img class="vectorPurpleSmall" src="./assets/img/skillIcons/vector_purple_small.png"/>
+    </div>
+
+    <div class="mySkillsTxtContainer">
+      <span class="mySkillsTxt">
+        {{"myskills.mySkillsSpan" | translate }}
+      </span>
+      <div class="getInTouchContainer">
+          <span class="mySkillsMainTxt">
+            {{"myskills.mySkillsMainSpan" | translate }}
+          <span class="anotherSkillTxt">
+            {{"myskills.mySkillsAnotherSpan" | translate }}</span>?
+          </span>
+
+          <span class="mySkillsSecondTxt">
+            {{"myskills.mySkillsSecondSpan" | translate }}
+          </span>
+          <div class="mySkillButtonContainer">
+            <a href="#contact" class="mySkillButton">{{"myskills.getInTouchSpan" | translate }}</a>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="skillsIconContainer" data-aos="flip-left">
+    @for (item of skillIcons; track item.img) {
+    <img src="{{ item.img }}" alt="skill Icons" />
+    }
+  </div>
+</div>

@@ -1,0 +1,31 @@
+<header>
+  <div class="mainContainer">
+  <div class="headerLeft" data-aos="fade-right">
+    <a href="#homepage" class="homepageMyName">Enver Shala</a>
+  </div>
+
+  <div class="headerRight" data-aos="fade-left">
+    <div class="translateMainContainer">
+      <img (click)="changeLangGlob.changeLanguage('en')" class="englishFlag" src="./assets/img/header/english.png" alt="english">
+      <img (click)="changeLangGlob.changeLanguage('de')" class="germanFlag" src="./assets/img/header/german.svg" alt="german">
+    </div>
+    <a href="#aboutMe" class="headerRightAboutMe">
+      <span class="aboutMeTxt">{{'header.aboutmeSpan' | translate }}</span></a>
+    <a href="#skills" class="headerRightSkills">
+      <span class="skillsTxt">{{'header.skillsSpan' | translate }}</span></a>
+    <a href="#portfolio" class="headerRightPortfolio">
+      <span class="portfolioTxt">Portfolio</span></a>
+    <button class="buttonBurgerContainer" (click)="openMenu()">
+      <img class="buttonBurgerImg" src="./assets/img/header/burger-menu.png" alt="burger-menu"/>
+    </button>
+  </div>
+
+  <div *ngIf="isMenuOpen" id="burgerMenuID" class="bgMenuContainer" data-aos="fade-left">
+    <img (click)="closeMenu()" class="closeBurgerContainer" src="./assets/img/header/close.svg">
+    <a href="#aboutMe" (click)="closeMenu()" class="buttonBurgerAboutme">About me</a>
+    <a href="#skills" (click)="closeMenu()" class="buttonBurgerMySkills">My skills</a>
+    <a href="#portfolio" (click)="closeMenu()" class="buttonBurgerPortfolio">Portfolio</a>
+    <a href="#contact" (click)="closeMenu()" class="buttonBurgerContact">Contact</a>
+  </div>
+</div>
+</header>

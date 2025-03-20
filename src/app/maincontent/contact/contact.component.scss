@@ -1,0 +1,396 @@
+.mainContainer {
+  position: relative;
+  height: 747px;
+  border: Mixed solid #ffffff;
+  color: #ffffff;
+  max-width: 1920px;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+.target-element {
+  scroll-margin-top: 100px;
+}
+
+.headerContainer {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  margin-top: -300px;
+  .header {
+    font-size: 90px;
+    font-weight: 700;
+    line-height: 108px;
+    text-align: center;
+  }
+}
+
+.contactDFlex {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 500px;
+}
+
+.contactInsideContainer {
+  display: flex;
+  flex-direction: column;
+  height: 19px;
+  width: 400px;
+  .contactInsideHeaderTxt {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38.4px;
+    text-align: center;
+  }
+  .contactInsideSpanTxt1,
+  .contactInsideSpanTxt2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    text-align: center;
+  }
+}
+
+.contactMe {
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 19.2px;
+  text-align: left;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.contactFormularContainer {
+  height: 508px;
+}
+
+.inputName,
+.inputEmail {
+  width: 617px;
+  height: 50px;
+  padding: 15px 25px;
+  border-radius: 10px;
+  border: 1px solid #9747ff;
+  background: #141d2f;
+  color: #ffffff;
+  &::placeholder {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    text-align: left;
+    color: #ffffff;
+  }
+}
+
+.inputNameRequiredContainer,
+.inputEmailRequiredContainer,
+.inputMessageRequiredContainer {
+  color: red;
+  margin-top: 10px;
+  margin-bottom: 28px;
+}
+
+.inputMessageAndPolicyContainer {
+  display: grid;
+  width: 617px;
+  height: 344px;
+  gap: 16px;
+  .privacyPolicyMainContainer {
+    display: grid;
+    width: 617px;
+    height: 126px;
+  }
+}
+
+.goUpButtonContainer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 50px;
+  margin-right: -50px;
+  .goUpButton {
+    cursor: pointer;
+    height: 42px;
+    width: 42px;
+  }
+}
+
+.privacyPolicySecondContainer {
+  display: grid;
+  width: 617px;
+  height: 52px;
+  gap: 8px;
+  margin-bottom: 10px;
+  .privacyPolicy {
+    display: flex;
+    align-items: center;
+    width: 650px;
+    height: 27px;
+  }
+  .contactSpan1,.textButtonPrivacyPolicy,.contactSpan2 {
+    text-wrap: nowrap;
+  }
+}
+
+.inputMessageContainer,
+.inputMessage {
+  display: grid;
+  width: 617px;
+  height: 202px;
+  padding: 15px 25px;
+  gap: 10px;
+  border-radius: 10px;
+  border: 1px solid #9747ff;
+  background: #141d2f;
+  color: #ffff;
+  &::placeholder {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    text-align: left;
+    color: #ffffff;
+  }
+}
+
+.checkbox {
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+}
+
+.textButtonPrivacyPolicy {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.8px;
+  text-align: left;
+  color: #9747ff;
+  text-decoration: none;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.sendButtonActive,
+.sendButtonDisable {
+  width: 253px;
+  height: 58px;
+  padding: 15px 30px;
+  gap: 10px;
+  border-radius: 10px;
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 27.6px;
+  text-align: left;
+  box-shadow: 4px 4px 4px 0px #00000040;
+  &.sendButtonActive {
+    background: #70e61c;
+    cursor: pointer;
+  }
+  &.sendButtonDisable {
+    background: #b6b6b6;
+    cursor: pointer;
+  }
+}
+
+.sendPostPopUpContainer {
+  position: fixed;
+  top: 40%;
+  bottom: 50%;
+  left: 40%;
+  color: #9747ff;
+  width: 26%;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #70e61c;
+  border: 5px solid #9747ff;
+  border-radius: 15px;
+  .OKButton {
+    width: 100px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffff;
+    background-color: #9747ff;
+    &:hover {
+      cursor: pointer;
+      transition: 75ms ease-in-out;
+      scale: 1.2;
+    }
+  }
+}
+
+@media (min-width: 1921px) and (max-width: 3840px) {
+  .mainContainer {
+    margin-top: 450px;
+    margin-bottom: 150px;
+  }
+}
+@media (max-width: 1460px) {
+  .headerContainer {
+    margin-top: -200px;
+    .header {
+      font-size: 70px;
+    }
+  }
+  .inputName,
+  .inputEmail,
+  .inputMessage {
+    width: 450px;
+  }
+  .privacyPolicySecondContainer {
+    height: 24px;
+    width: 500px;
+    .privacyPolicy {
+      width: 500px;
+      font-size: 12px;
+    }
+  }
+  .inputMessageRequiredContainer {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+  .sendButtonDisable,
+  .sendButtonActive {
+    width: 200px;
+    height: 58px;
+    padding: 10px 10px 10px 10px;
+  }
+  .goUpButtonContainer {
+    margin-top: 50px;
+    margin-right: 0px;
+  }
+  .contactFormularContainer {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    margin-top: 50px;
+    width: 520px;
+  }
+  .contactInsideContainer {
+    width: 300px;
+  }
+  .vectorLineHeader {
+    width: 380px;
+  }
+}
+@media (max-width: 1200px) {
+  .headerContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .vectorLineHeader {
+    display: none;
+  }
+  .contactDFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .contactInsideHeaderTxt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+    width: 420px;
+  }
+  .contactInsideContainer {
+    width: 100%;
+    margin: 0;
+    height: max-content;
+    display: flex;
+    align-items: center;
+  }
+  .contactInsideSpanTxt1,
+  .contactInsideSpanTxt2 {
+    width: 420px;
+  }
+  .inputName,
+  .inputEmail,
+  .inputMessage {
+    width: 430px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  form,
+  .contactFormularContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .inputMessageRequiredContainer {
+    font-size: 16px;
+  }
+  .contactSpan2 {
+    margin-bottom: 16px;
+  }
+  .privacyPolicySecondContainer {
+    margin-bottom: 100px;
+  }
+  .privacyPolicy {
+    flex-direction: column;
+  }
+  .contactSpan1,
+  .contactSpan2,
+  .textButtonPrivacyPolicy {
+    font-size: 16px;
+  }
+  .contactSpan2 {
+   margin: 0;
+  }
+  .checkboxRequiredSpanContainer {
+    margin-top: 8px;
+    margin-left: -32px;
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+  .privacyPolicyMainContainer,
+  .inputMessageAndPolicyContainer {
+    width: 400px;
+  }
+  .goUpButtonContainer {
+    width: 450px;
+  }
+}
+@media (max-width: 580px) {
+  .inputName,
+  .inputEmail,
+  .inputMessage {
+    width: 240px;
+  }
+  .contactFormularContainer {
+    width: 240px;
+    margin-top: 20px;
+  }
+  .contactInsideHeaderTxt,
+  .contactInsideSpanTxt1,
+  .contactInsideSpanTxt2 {
+    width: 260px;
+  }
+  .goUpButtonContainer {
+    width: 350px;
+    margin-top: 20px;
+  }
+}

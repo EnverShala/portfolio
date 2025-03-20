@@ -1,0 +1,42 @@
+.impressum {
+  max-width: 1920px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-wrap: wrap;
+  color: white;
+  margin-top: 100px;
+  padding-left: 150px;
+  padding-right: 150px;
+  margin-bottom: -200px;
+  a {
+    color: white;
+  }
+}
+@media (min-width: 1921px) and (max-width: 3840px) {
+  .impressum {
+    max-width: 1648px;
+    height: 80vh;
+    text-align: center;
+    padding-left: 150px;
+    padding-right: 150px;
+    margin-bottom: -245px;
+  }
+}
+@media (max-width: 1477px) {
+  .impressum {
+    padding: 50px 70px 0px 70px;
+    margin-bottom: -350px;
+  }
+}
+@media (max-width: 840px) {
+  .impressum {
+    padding: 50px 40px 0px 30px;
+  }
+}
+@media (max-width: 630px) {
+  .impressum {
+    text-align: center;
+  }
+}

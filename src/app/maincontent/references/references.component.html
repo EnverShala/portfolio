@@ -1,0 +1,57 @@
+<div class="mainContainer">
+  <div class="testimonialsMainContainer">
+    <div class="testimonialsContainer">
+      <div class="imageContainer" data-aos="fade-left">
+        <div class="imageBorder">
+          <img class="profilePicFromReference${{currentIndex}}" [src]="refencesEn[currentIndex].picture"/>
+        </div>
+      </div>
+
+      <div class="testimonials" data-aos="fade-right">
+        <div class="gooseFeetContainer" data-aos="fade-in">
+          <img class="gooseFeet" src="./assets/img/references/goose-feet.png" />
+        </div>
+        <span style="color: #ffff" id="referencesID">
+         @if (changeLangGlob.currentLanguage === 'en') {
+          {{ refencesEn[currentIndex].reference }}
+         } @else {
+          {{ refencesDe[currentIndex].reference }}
+         }
+        </span>
+        <div class="signatureContainer">
+          <div class="signatureSecondContainer">
+            <img class="vectorPurple" src="./assets/img/references/vector_purple_long.png"/>
+          </div>
+          <span style="color: #ffff">{{ refencesEn[currentIndex].name }}</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="swipeBarContainer" data-aos="fade-in">
+      <img
+        (click)="previousReference()"
+        id="arrowBackID"
+        class="arrowBack"
+        src="./assets/img/references/arrow_back.png"
+      />
+      <img
+        [src]="getEllipseSrc(0)"
+        [ngClass]="{ active: currentIndex === 0 }"
+      />
+      <img
+        [src]="getEllipseSrc(1)"
+        [ngClass]="{ active: currentIndex === 1 }"
+      />
+      <img
+        [src]="getEllipseSrc(2)"
+        [ngClass]="{ active: currentIndex === 2 }"
+      />
+      <img
+        (click)="nextReference()"
+        id="arrowForwardID"
+        class="arrowForward"
+        src="./assets/img/references/arrow_forward.png"
+      />
+    </div>
+  </div>
+</div>
