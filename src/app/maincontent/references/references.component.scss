@@ -33,7 +33,7 @@
       flex-direction: column;
       justify-content: space-between;
       width: 650px;
-      height: 150px;
+      height: auto;
       padding: 48px 96px 48px 96px;
       gap: 44px;
       border-radius: 32px;
@@ -131,11 +131,11 @@
     .testimonialsContainer {
       .testimonials {
         width: 300px;
-        height: 150px;
+        height: auto;
         padding-left: 50px;
         padding-right: 70px;
         padding-top: 40px;
-        padding-bottom: 70px;
+        padding-bottom: 20px;
         margin-bottom: 40px;
         gap: 44px;
         text-wrap: wrap;
@@ -167,7 +167,7 @@
         padding-left: 50px;
         padding-right: 50px;
         padding-top: 40px;
-        padding-bottom: 70px;
+        padding-bottom: 20px;
       }
       .imageContainer {
         position: relative;
@@ -181,7 +181,7 @@
     .testimonialsContainer {
       .testimonials {
         width: 200px;
-        height: 220px;
+        height: auto;
       }
     }
   }
