@@ -60,7 +60,7 @@ export class PortfolioComponent {
       language: 'JavaScript | HTML | CSS',
       description:
         'Jump-Run-Spiel basierend auf einem objektorientierten Ansatz. Hilf Pepe, Münzen und Tabasco-Salsa zu finden, um gegen das verrückte Huhn zu kämpfen.',
-      linkLiveTest: 'https://enver-shala.de/elPolloLoco',
+      linkLiveTest: 'https://enver-shala.de/elpolloloco/index.html',
       linkGitHub: 'https://github.com/EnverShala/elPolloLoco',
     },
     {
@@ -69,7 +69,7 @@ export class PortfolioComponent {
       language: 'JavaScript | HTML | CSS | Api',
       description:
         'Basierend auf der PokéAPI – eine einfache Bibliothek, die Pokémon-Informationen bereitstellt und katalogisiert.',
-      linkLiveTest: 'https://enver-shala.de/pokedex',
+      linkLiveTest: 'https://enver-shala.de/pokedex/index.html',
       linkGitHub: 'https://github.com/EnverShala/pokedex',
     },
   ];
