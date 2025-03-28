@@ -317,14 +317,14 @@ $green: #70e61c;
 }
 @media (max-width: 470px) {
   .mainImagesContainer {
-    margin-top: -20px;
+    margin-top: 0px;
     .mainImage {
       width: 240px;
       height: 560px;
     }
   }
   .mainTextContainer {
-    margin-top: -130px;
+    margin-top: -150px;
     .mainIamTxtContainer {
       .iamTxt {
         font-size: 32px;
@@ -333,7 +333,7 @@ $green: #70e61c;
     .titelTxtContainer {
       .nameTxt {
         margin: 12px 0 -20px 0;
-        font-size: 40px;
+        font-size: 32px;
       }
       .jobDescriptionTxt {
         font-size: 20px;
@@ -342,11 +342,12 @@ $green: #70e61c;
   }
   .referencesContainer {
     gap: 10px;
+    bottom: 200px !important;
   }
   .buttonOnMainContainer {
     .buttonOnMain {
       height: 44px;
-      margin-top: -26px;
+      margin-top: -40px;
     }
   }
   .githubIconContainer,
