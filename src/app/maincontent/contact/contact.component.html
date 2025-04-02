@@ -30,14 +30,14 @@
         <input #email="ngModel" minlength="4" [(ngModel)]="contactData.email" name="email" class="inputEmail" type="email" placeholder="{{'contact.yourEmailPlaceholder' | translate }}" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"/>
         <div class="inputEmailRequiredContainer">
           @if (!email.valid && email.touched) {
-            <span style="color: red;">{{'contact.requiredEmailSpan' | translate }}</span>
+            <span class="acceptPrivacyMessage">{{'contact.requiredEmailSpan' | translate }}</span>
           }
         </div>
 
         <input #message="ngModel" minlength="4" [(ngModel)]="contactData.message" name="message" class="inputMessage" type="message" placeholder="{{'contact.yourMessagePlaceholder' | translate }}" required/>
         <div class="inputMessageRequiredContainer">
           @if (!message.valid && message.touched) {
-            <span style="color: red;">{{'contact.requiredMessageSpan' | translate }}</span>
+            <span class="acceptPrivacyMessage">{{'contact.requiredMessageSpan' | translate }}</span>
           }
         </div>
        
@@ -50,7 +50,7 @@
             <span class="contactSpan2">{{'contact.privacyPolicyThirdSpan' | translate }}</span>
           </div>
           <div class="checkboxRequiredSpanContainer" #privacySpan style="display: none;" *ngIf="!contactData.checkbox">
-            <span style="color: red;">{{'contact.privacyPolicyRequiredSpan' | translate }}</span>
+            <span class="acceptPrivacyMessage">{{'contact.privacyPolicyRequiredSpan' | translate }}</span>
           </div>
         </div>
        

@@ -19,7 +19,7 @@ export class PortfolioComponent {
     {
       images: './assets/img/portfolioImg/join.png',
       name: 'Join',
-      language: 'Angular | TypeScript | HTML | CSS | Firebase',
+      language: 'JavaScript | HTML | CSS | Firebase',
       description:
         'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
       linkLiveTest: 'https://enver-shala.de/join/index.html',
@@ -37,7 +37,7 @@ export class PortfolioComponent {
     {
       images: './assets/img/portfolioImg/pokedex.png',
       name: 'Pokèdex',
-      language: 'JavaScript | HTML | CSS | Api',
+      language: 'JavaScript | HTML | CSS | API',
       description:
         'Based on the PokéAPI a simple library that provides and catalogues pokemon information.',
       linkLiveTest: 'https://enver-shala.de/pokedex/index.html',
@@ -48,7 +48,7 @@ export class PortfolioComponent {
     {
       images: './assets/img/portfolioImg/join.png',
       name: 'Join',
-      language: 'Angular | TypeScript | HTML | CSS | Firebase',
+      language: 'JavaScript | HTML | CSS | Firebase',
       description:
         'Task-Manager inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben mit Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.',
       linkLiveTest: 'https://enver-shala.de/join/index.html',
@@ -66,7 +66,7 @@ export class PortfolioComponent {
     {
       images: './assets/img/portfolioImg/pokedex.png',
       name: 'Pokèdex',
-      language: 'JavaScript | HTML | CSS | Api',
+      language: 'JavaScript | HTML | CSS | API',
       description:
         'Basierend auf der PokéAPI – eine einfache Bibliothek, die Pokémon-Informationen bereitstellt und katalogisiert.',
       linkLiveTest: 'https://enver-shala.de/pokedex/index.html',

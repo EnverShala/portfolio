@@ -176,6 +176,11 @@ $green: #70e61c;
     bottom: 200px !important;
   }
 }
+@media (min-height: 660px) and (max-height: 780px) and (max-width: 1000px) {
+  .referencesContainer {
+    top: 600px !important;
+  }
+}
 @media (min-height: 660px) and (max-height: 780px) {
   .mainImagesContainer {
     margin-top: -12px !important;
@@ -293,7 +298,7 @@ $green: #70e61c;
   }
   .referencesContainer {
     gap: 15px;
-    bottom: 110px;
+    top: 740px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -341,8 +346,13 @@ $green: #70e61c;
     }
   }
   .referencesContainer {
-    gap: 10px;
-    bottom: 200px !important;
+    gap: 8px;
+    top: 640px;
+    .emailTxtContainer {
+      .emailTxt {
+        font-size: 14px;        
+      }
+    }
   }
   .buttonOnMainContainer {
     .buttonOnMain {

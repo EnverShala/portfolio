@@ -25,7 +25,7 @@ export class AppComponent {
     this.translate.use('en');
   }
   title = 'portfolio';
-  ngOnInit() {
+  ngAfterViewInit() {
     AOS.init();
   }
 }

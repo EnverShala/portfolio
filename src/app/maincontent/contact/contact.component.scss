@@ -7,11 +7,9 @@
   padding-left: 150px;
   padding-right: 150px;
 }
-
 .target-element {
   scroll-margin-top: 100px;
 }
-
 .headerContainer {
   position: absolute;
   left: 0;
@@ -33,7 +31,6 @@
   justify-content: space-between;
   margin-top: 500px;
 }
-
 .contactInsideContainer {
   display: flex;
   flex-direction: column;
@@ -57,7 +54,6 @@
     text-align: center;
   }
 }
-
 .contactMe {
   font-size: 16px;
   font-weight: 800;
@@ -67,11 +63,9 @@
     cursor: pointer;
   }
 }
-
 .contactFormularContainer {
   height: 508px;
 }
-
 .inputName,
 .inputEmail {
   width: 617px;
@@ -89,7 +83,6 @@
     color: #ffffff;
   }
 }
-
 .inputNameRequiredContainer,
 .inputEmailRequiredContainer,
 .inputMessageRequiredContainer {
@@ -97,7 +90,14 @@
   margin-top: 10px;
   margin-bottom: 28px;
 }
-
+.acceptPrivacyMessage {
+  color: red;
+  margin-top: -56px;
+  margin-left: 220px;
+  font-size: 16px;
+  margin-bottom: 16px;
+  text-wrap: nowrap;
+}
 .inputMessageAndPolicyContainer {
   display: grid;
   width: 617px;
@@ -109,7 +109,6 @@
     height: 126px;
   }
 }
-
 .goUpButtonContainer {
   display: flex;
   justify-content: flex-end;
@@ -121,7 +120,6 @@
     width: 42px;
   }
 }
-
 .privacyPolicySecondContainer {
   display: grid;
   width: 617px;
@@ -138,7 +136,6 @@
     text-wrap: nowrap;
   }
 }
-
 .inputMessageContainer,
 .inputMessage {
   display: grid;
@@ -158,13 +155,11 @@
     color: #ffffff;
   }
 }
-
 .checkbox {
   width: 18px;
   height: 18px;
   margin-right: 10px;
 }
-
 .textButtonPrivacyPolicy {
   font-size: 14px;
   font-weight: 400;
@@ -175,12 +170,10 @@
   margin-left: 4px;
   margin-right: 4px;
 }
-
 .buttonContainer {
   display: flex;
   justify-content: center;
 }
-
 .sendButtonActive,
 .sendButtonDisable {
   width: 253px;
@@ -202,7 +195,6 @@
     cursor: pointer;
   }
 }
-
 .sendPostPopUpContainer {
   position: fixed;
   top: 40%;
@@ -234,7 +226,6 @@
     }
   }
 }
-
 @media (min-width: 1921px) and (max-width: 3840px) {
   .mainContainer {
     margin-top: 450px;
@@ -242,6 +233,9 @@
   }
 }
 @media (max-width: 1460px) {
+  .acceptPrivacyMessage {
+    margin-top: 0px !important;
+  }
   .headerContainer {
     margin-top: -200px;
     .header {
@@ -290,6 +284,10 @@
   }
 }
 @media (max-width: 1200px) {
+  .acceptPrivacyMessage {
+    margin-left: 0px !important;
+  }
+
   .headerContainer {
     width: 100%;
     display: flex;
@@ -361,10 +359,11 @@
    margin: 0;
   }
   .checkboxRequiredSpanContainer {
-    margin-top: 8px;
-    margin-left: -32px;
+    margin-top: -56px;
+    margin-left: 130px;
     font-size: 16px;
     margin-bottom: 16px;
+    text-wrap: nowrap;
   }
   .privacyPolicyMainContainer,
   .inputMessageAndPolicyContainer {
