@@ -297,6 +297,7 @@ $green: #70e61c;
     display: none;
   }
   .referencesContainer {
+    margin-left: calc(50% - 239px);
     gap: 15px;
     top: 740px;
     display: flex;
@@ -346,8 +347,8 @@ $green: #70e61c;
     }
   }
   .referencesContainer {
+    margin-left: calc(50% - 160px);
     gap: 8px;
-    margin-left: 7px;
     top: 640px;
     .emailTxtContainer {
       .emailTxt {

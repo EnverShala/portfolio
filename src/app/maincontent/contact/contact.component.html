@@ -23,7 +23,7 @@
         <input #name="ngModel" minlength="4" [(ngModel)]="contactData.name" name="name"  class="inputName" type="name" placeholder="{{'contact.yourNamePlaceholder' | translate }}" required/>
         <div class="inputNameRequiredContainer">
           @if (!name.valid && name.touched) {
-            <span style="color: red;">{{'contact.requiredNameSpan' | translate }}</span>
+            <span class="acceptPrivacyMessage">{{'contact.requiredNameSpan' | translate }}</span>
           }
         </div>
 
@@ -44,7 +44,7 @@
         <div class="privacyPolicySecondContainer">
           <div class="privacyPolicy">
             <div style="width: auto; display: flex; justify-content: center; align-items: center; text-wrap: wrap;">
-            <input (click)="checked()" name="checkbox" #checkbox="ngModel" [(ngModel)]="contactData.checkbox" class="checkbox" type="checkbox" required/>            
+            <input (click)="checked()" name="checkbox" #checkbox="ngModel" [(ngModel)]="contactData.checkbox" class="checkbox cursorPointer" type="checkbox" required/>            
             <span class="contactSpan1">{{'contact.privacyPolicyFirstSpan' | translate }}</span>
             <a href="privacypolicy" class="textButtonPrivacyPolicy">{{'contact.privacyPolicySpan' | translate }}</a>
           </div>
