@@ -100,6 +100,7 @@ footer {
     align-items: center;
     flex-direction: column;
     gap: 30px;
+    text-align: center;
   }
   .logo{
     margin: 0;
@@ -109,7 +110,7 @@ footer {
   .footerLeftSpan{
     position: absolute;
     margin-top: 160px;
-    margin-left: 104px;
+    left: calc(50% - 49px);
   }
 }
 @media(max-width: 400px){
@@ -122,10 +123,4 @@ footer {
   .gitHubIcon,.emailIcon,.linkedInIcon {
     height: 20px;
   }
-  .footerLeftSpan{
-    position: absolute;
-    margin-top: 160px;
-    margin-left: 48px;
-  }
-
 }

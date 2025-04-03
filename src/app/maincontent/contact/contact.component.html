@@ -1,6 +1,6 @@
+<div>
 <div id="contactMain" class="mainContainer">
-  <div data-aos="fade-right" class="headerContainer"
-  >
+  <div data-aos="fade-right" class="headerContainer">
     <img class="vectorLineHeader" src="./assets/img/contact/linie_purple_long.png" />
     <h2 class="header">{{'contact.contactHeader' | translate }}</h2>
   </div>
@@ -43,11 +43,13 @@
        
         <div class="privacyPolicySecondContainer">
           <div class="privacyPolicy">
-            <input (click)="checked()" name="checkbox" #checkbox="ngModel" [(ngModel)]="contactData.checkbox" class="checkbox" type="checkbox" required/>
+            <div style="width: auto; display: flex; justify-content: center; align-items: center; text-wrap: wrap;">
+            <input (click)="checked()" name="checkbox" #checkbox="ngModel" [(ngModel)]="contactData.checkbox" class="checkbox" type="checkbox" required/>            
             <span class="contactSpan1">{{'contact.privacyPolicyFirstSpan' | translate }}</span>
             <a href="privacypolicy" class="textButtonPrivacyPolicy">{{'contact.privacyPolicySpan' | translate }}</a>
-            <span class="contactSpan2">{{'contact.privacyPolicySecondSpan' | translate }}</span>
-            <span class="contactSpan2">{{'contact.privacyPolicyThirdSpan' | translate }}</span>
+          </div>
+          <span class="contactSpan2">{{'contact.privacyPolicySecondSpan' | translate }}
+            {{'contact.privacyPolicyThirdSpan' | translate }}</span>
           </div>
           <div class="checkboxRequiredSpanContainer" #privacySpan style="display: none;" *ngIf="!contactData.checkbox">
             <span class="acceptPrivacyMessage">{{'contact.privacyPolicyRequiredSpan' | translate }}</span>
@@ -55,7 +57,7 @@
         </div>
        
         @if (!message.valid || !email.valid || !name.valid || !contactData.checkbox) {
-          <input (click)="checkPrivacy()" type="submit" [value]="'contact.buttonSpan' | translate" class="sendButtonDisable">
+          <input (click)="checkPrivacy()" type="submit" [value]="'contact.buttonSpan' | translate" class="sendButtonDisable" disabled>
         }
         @else if (message.valid && email.valid && name.valid && contactData.checkbox){
           <input type="submit" value="Send message :)" class="sendButtonActive">
@@ -75,4 +77,5 @@
     <h1 class="sendPostTxt">{{'contact.sendPostSpan' | translate }}</h1>
     <button (click)="closePopUp()" class="OKButton">OK</button>
   </div>
+</div>
 </div>

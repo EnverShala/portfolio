@@ -15,17 +15,17 @@
       <span class="skillsTxt">{{'header.skillsSpan' | translate }}</span></a>
     <a href="#portfolio" class="headerRightPortfolio">
       <span class="portfolioTxt">Portfolio</span></a>
-    <button class="buttonBurgerContainer" (click)="openMenu()">
+    <button class="buttonBurgerContainer  cursorPointer" (click)="openMenu()">
       <img class="buttonBurgerImg" src="./assets/img/header/burger-menu.png" alt="burger-menu"/>
     </button>
   </div>
 
   <div *ngIf="isMenuOpen" id="burgerMenuID" class="bgMenuContainer" data-aos="fade-left">
     <img (click)="closeMenu()" class="closeBurgerContainer" src="./assets/img/header/close.svg">
-    <a href="#aboutMe" (click)="closeMenu()" class="buttonBurgerAboutme">About me</a>
-    <a href="#skills" (click)="closeMenu()" class="buttonBurgerMySkills">My skills</a>
-    <a href="#portfolio" (click)="closeMenu()" class="buttonBurgerPortfolio">Portfolio</a>
-    <a href="#contact" (click)="closeMenu()" class="buttonBurgerContact">Contact</a>
+    <a href="#aboutMe" (click)="closeMenu()" class="buttonBurgerAboutme  cursorPointer">About me</a>
+    <a href="#skills" (click)="closeMenu()" class="buttonBurgerMySkills cursorPointer">My skills</a>
+    <a href="#portfolio" (click)="closeMenu()" class="buttonBurgerPortfolio cursorPointer">Portfolio</a>
+    <a href="#contact" (click)="closeMenu()" class="buttonBurgerContact cursorPointer">Contact</a>
   </div>
 </div>
 </header>

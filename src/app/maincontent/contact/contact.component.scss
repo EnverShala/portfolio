@@ -192,10 +192,11 @@
   }
   &.sendButtonDisable {
     background: #b6b6b6;
-    cursor: pointer;
+    cursor: default;
   }
 }
 .sendPostPopUpContainer {
+  padding: 8px;
   position: fixed;
   top: 40%;
   bottom: 50%;
@@ -377,7 +378,7 @@
   .inputName,
   .inputEmail,
   .inputMessage {
-    width: 240px;
+    width: 360px;
   }
   .contactFormularContainer {
     width: 240px;
@@ -391,5 +392,19 @@
   .goUpButtonContainer {
     width: 350px;
     margin-top: 20px;
+  }
+}
+@media (max-width: 460px) {
+  .inputName,
+  .inputEmail,
+  .inputMessage {
+    width: 240px;
+  }
+}
+@media (max-width: 440px) {
+  .contactSpan1,
+  .contactSpan2,
+  .textButtonPrivacyPolicy {
+    font-size: 10px;
   }
 }

@@ -97,6 +97,10 @@ header {
   }
 }
 
+.cursorPointer {
+  cursor: pointer;
+}
+
 .aboutMeTxt {
   height: 28px;
   gap: 0px;
@@ -245,7 +249,7 @@ header {
     align-items: center;
     flex-direction: column;
     gap: 29px;
-    font-size: 26px;
+    font-size: 24px;
     .buttonBurgerAboutme,
     .buttonBurgerMySkills,
     .buttonBurgerPortfolio,
@@ -275,7 +279,7 @@ header {
     width: fit-content;
   }
 }
-@media (max-width: 410px) {
+@media (max-width: 420px) {
   .mainContainer {
     padding: 20px 20px 20px 20px;
   }
@@ -287,5 +291,10 @@ header {
   }
   .headerRight {
     gap: 8px;
+  }
+}
+@media (max-width: 360px) {
+  .homepageMyName {
+    font-size: 24px;
   }
 }
