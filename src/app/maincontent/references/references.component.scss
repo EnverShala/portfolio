@@ -80,7 +80,8 @@
 }
 
 .swipeBarContainer {
-  display: flex;
+  //display: flex;
+  display: none; // because there is only 1 reference
   align-items: center;
   justify-content: center;
   width: 100%;
