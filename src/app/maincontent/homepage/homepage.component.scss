@@ -397,3 +397,29 @@ $green: #70e61c;
     }
   }
 }
+@media (max-width: 370px) {
+  .referencesContainer {
+    margin-left: calc(50% - 47px);
+    gap: 8px;
+    top: 640px;
+    .emailTxtContainer {
+      display: none;
+    }
+  }
+  .githubIconContainer,
+  .emailIconContainer,
+  .linkedInIconContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    width: 20px;
+    .githubIcon,
+    .emailIcon,
+    .linkedInIcon {
+      width: 20px;
+      height: 20px;
+      margin: 16px;
+    }
+  }
+}
